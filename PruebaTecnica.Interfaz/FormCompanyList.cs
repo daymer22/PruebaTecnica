@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace PruebaTecnica.Interfaz
 {
-    public partial class Form1 : Form
+    public partial class FormCompanyList : Form
     {
-        public Form1()
+        public FormCompanyList()
         {
             InitializeComponent();
         }
 
+        private void FormCompanyList_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
