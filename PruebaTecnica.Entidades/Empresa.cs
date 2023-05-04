@@ -14,7 +14,7 @@ namespace PruebaTecnica.Entidades
         public string Nombre { get; set; }
 
         [Required]
-        [Column(TypeName = "int(12)")]
+        [Column(TypeName = "numeric(12,0)")]
         public int Codigo { get; set; }
 
         [Required]

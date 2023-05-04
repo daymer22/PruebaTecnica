@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# IDE0022: Usar cuerpo de expresiones para los métodos
+dotnet_diagnostic.IDE0022.severity = none

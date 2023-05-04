@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.Logica", "PruebaTecnica.Logica\PruebaTecnica.Logica.csproj", "{73A1446E-673C-4083-B699-DF8980652632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaTecnica.Logica", "PruebaTecnica.Logica\PruebaTecnica.Logica.csproj", "{73A1446E-673C-4083-B699-DF8980652632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.AccesoADatos", "PruebaTecnica.AccesoADatos\PruebaTecnica.AccesoADatos.csproj", "{0ADCF80C-336B-4D6C-9056-1725AF91578A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaTecnica.AccesoADatos", "PruebaTecnica.AccesoADatos\PruebaTecnica.AccesoADatos.csproj", "{0ADCF80C-336B-4D6C-9056-1725AF91578A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.Entidades", "PruebaTecnica.Entidades\PruebaTecnica.Entidades.csproj", "{46907A6A-7443-43E9-B632-934F029A49DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaTecnica.Entidades", "PruebaTecnica.Entidades\PruebaTecnica.Entidades.csproj", "{46907A6A-7443-43E9-B632-934F029A49DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.Interfaz", "PruebaTecnica.Interfaz\PruebaTecnica.Interfaz.csproj", "{27B0990F-55B5-44BB-93EF-066D2016ECE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaTecnica.Interfaz", "PruebaTecnica.Interfaz\PruebaTecnica.Interfaz.csproj", "{27B0990F-55B5-44BB-93EF-066D2016ECE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
