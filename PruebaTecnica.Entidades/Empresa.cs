@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PruebaTecnica.Entidades.Dto;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -38,5 +39,35 @@ namespace PruebaTecnica.Entidades
 
         [Required]
         public DateTime FechaModificacion{ get; set; }
+
+        public virtual Empresa MapearDesdeEmpresaDtoAEmpresa(EmpresaDto empresaDto)
+        {
+            return new Empresa()
+            {
+                Ciudad = empresaDto.Ciudad,
+                Codigo = empresaDto.Codigo,
+                Departamento = empresaDto.Departamento,
+                Direccion = empresaDto.Direccion,
+                FechaCreacion = DateTime.Now,
+                FechaModificacion = DateTime.Now,
+                Nombre = empresaDto.Nombre,
+                Telefono = empresaDto.Telefono
+            };
+        }
+
+        public virtual Empresa MapearDesdeEmpresaDtoAEmpresaUpdate(EmpresaDto empresaDto)
+        {
+            return new Empresa()
+            {
+                IdEmpresa = empresaDto.IdEmpresa,
+                Ciudad = empresaDto.Ciudad,
+                Codigo = empresaDto.Codigo,
+                Departamento = empresaDto.Departamento,
+                Direccion = empresaDto.Direccion,
+                FechaModificacion = DateTime.Now,
+                Nombre = empresaDto.Nombre,
+                Telefono = empresaDto.Telefono
+            };
+        }
     }
 }

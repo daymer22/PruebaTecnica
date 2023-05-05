@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PruebaTecnica.AccesoADatos\PruebaTecnica.AccesoADatos.csproj" />
+    <ProjectReference Include="..\PruebaTecnica.Logica\PruebaTecnica.Logica.csproj" />
   </ItemGroup>
 
   <ItemGroup>
