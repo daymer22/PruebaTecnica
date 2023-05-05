@@ -11,6 +11,7 @@ namespace PruebaTecnica.Interfaz
         private readonly GetEmpresasService _getEmpresasService;
         private readonly DeleteEmpresaService _deleteEmpresaService;
         private readonly DeleteEmpresasService _deleteEmpresasService;
+        private readonly GetEmpresasFilterNameService _getEmpresasFilterNameService;
 
         public FormCompanyList()
         {
@@ -18,6 +19,7 @@ namespace PruebaTecnica.Interfaz
             _getEmpresasService = new GetEmpresasService();
             _deleteEmpresaService = new DeleteEmpresaService();
             _deleteEmpresasService = new DeleteEmpresasService();
+            _getEmpresasFilterNameService = new GetEmpresasFilterNameService();
         }
 
         private void btnAnadir_Click(object sender, EventArgs e)
@@ -93,6 +95,24 @@ namespace PruebaTecnica.Interfaz
         private void CargarDatosALaGrilla()
         {
             List<EmpresaDto> empresasDto = _getEmpresasService.Ejecutar();
+
+            dgvListado.Rows.Clear();
+
+            empresasDto.ForEach(emp => {
+                dgvListado.Rows.Add(emp.IdEmpresa, emp.Nombre, emp.Codigo, emp.Direccion, emp.Telefono, emp.Ciudad,
+                    emp.Departamento, emp.FechaCreacion, emp.FechaModificacion);
+            });
+        }
+
+        private void txtFiltrar_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtFiltrar.Text))
+            {
+                CargarDatosALaGrilla();
+                return;
+            }
+
+            List<EmpresaDto> empresasDto = _getEmpresasFilterNameService.Ejecutar(txtFiltrar.Text);
 
             dgvListado.Rows.Clear();
 

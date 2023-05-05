@@ -239,6 +239,7 @@ namespace PruebaTecnica.Interfaz
             this.txtFiltrar.Name = "txtFiltrar";
             this.txtFiltrar.Size = new System.Drawing.Size(370, 31);
             this.txtFiltrar.TabIndex = 9;
+            this.txtFiltrar.TextChanged += new System.EventHandler(this.txtFiltrar_TextChanged);
             // 
             // FormCompanyList
             // 
